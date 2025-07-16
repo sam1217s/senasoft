@@ -24,7 +24,7 @@ Holds details of the AI-powered assistants (like Quiliano, Ada, Magnus, Eleanor)
 ##### `📁 layers/`  
 Progressively refined prompts and intermediate images, organized by generation layers.
 ##### `📁 reference/`  
-Hand-drawn sketches, Paint diagrams, and real-world photos used to align the GPT-4o model with the creative direction.
+[Hand-drawn sketches](https://github.com/fepecas/sena-soft-2025/blob/main/roadmap/reference/photo_whiteboard_step6.jpg), Paint diagrams, and real-world photos used to align the GPT-4o model with the creative direction.
 ##### `📁 tests/`  
 Early concept tests exploring whether AI image generation was viable for a project of this style and scope.
 ##### `📄 map_prompt.md`  
