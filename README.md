@@ -1,8 +1,7 @@
 # Welcome!
 > 
 > **MVP Development Category (Globant, AI PODs Edition)**<br>
-> This contest challenges talented individuals to solve problems using software — regardless of programming language or framework —<br>
-> by applying the most relevant tools and concepts from the IT industry each year to address real-world issues.
+> This contest challenges talented individuals to solve problems using software — regardless of programming language or framework — by applying the most relevant tools and concepts from the IT industry each year to address real-world issues.
 
 ```txt
    _____ ______ _   _             _____  ____  ______ _______ 
