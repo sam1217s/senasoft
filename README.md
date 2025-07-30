@@ -1,6 +1,6 @@
 # Welcome!
 > 
-> **MVP Development Category (Globant, AI PODs Edition)**<br>
+> **MVP Development Category (Globant, Synthetic Edition)**<br>
 > This contest challenges talented individuals to solve problems using software — regardless of programming language or framework — by applying the most relevant tools and concepts from the IT industry each year to address real-world issues.
 
 ```txt
@@ -12,7 +12,7 @@
  |_____/|______|_| \_/_/    \_\ |_____/ \____/|_|       |_|   
                                                               
 ```
-![Competition Roadmap](roadmap/layers/generated_layer16.png)
+![Competition Roadmap](roadmap/layers/generated_layer17.png)
 
 ## 📁 Directory Overview
 ### `roadmap/`  
