@@ -35,6 +35,3 @@ This folder contains everything used to create the illustrated roadmap for the c
 - `reference/`: [sketches and reference photos](https://github.com/fepecas/sena-soft-2025/blob/main/roadmap/reference/photo_whiteboard_step6.jpg).
 - `tests/`: initial conceptual tests.
 - `video/`: assets used in the offline-recording.
-
-
-- `avatars/`: details of the AI assistants guiding participants.
