@@ -11,7 +11,10 @@ Materials for the admission process, including forms and informational sections.
 
 Resources for the community, shaping the look and feel of virtual spaces.
 
+- [`github/`](community/github/): this platform will be used as a learning lab.
 - [`meet/`](community/meet/): live streaming.
+- [`spotify/`](community/spotify/): all the assets related to "Bitácora Sintética".
+- [`suno/`](community/meet/): this AI was used to cread the opening theme for the podcast.
 - [`whatsapp/`](community/whatsapp/): WhatsApp groups and resources.
 
 #### 📁 [gpt/](gpt/)
