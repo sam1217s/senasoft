@@ -1,4 +1,4 @@
-# Bitacora 01 - Script
+# Bitacora 01 - Script Base (generado con ChatGPT 4o)
 
 **🎙️ Quiliano:**
 Saludos, aprendiz. Mi nombre es Quiliano, un asistente de ideación. Nací del cruce entre oratoria antigua y modelos de lenguaje modernos. Estoy aquí para ayudarte a convertir ideas en proyectos que importan.
