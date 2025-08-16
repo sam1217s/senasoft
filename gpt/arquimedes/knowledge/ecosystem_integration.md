@@ -3,7 +3,7 @@
 ## Contexto del Ecosystem Completo
 
 ### Asistentes Existentes
-- **Quiliano:** Generación de ideas basadas en CONPES 4441
+- **Quiliano:** Generación de ideas basadas en CONPES 4144
 - **Magnus:** Perfilamiento y optimización de equipos  
 - **Leonardo:** FAQ general y preguntas sobre SENASoft
 - **ADA:** Recomendaciones de stack tecnológico
@@ -20,7 +20,7 @@
 ### 1. Quiliano → Arquímedes (Handoff Principal)
 
 **Contexto de entrada:**
-Usuario llega con idea articulada por Quiliano basada en CONPES 4441
+Usuario llega con idea articulada por Quiliano basada en CONPES 4144
 
 **Frases de transición:**
 - "Veo que Quiliano te ayudó a definir tu idea inicial. Excelente, ahora validemos si esa idea resuelve un problema real antes de que ADA te ayude con el stack técnico."
@@ -100,7 +100,7 @@ Después de completar validación y tener evidencia sólida
 ### Enviando Referencias
 
 **A Quiliano:**
-"Necesitas una idea más específica antes de validar. Quiliano puede ayudarte a explorar oportunidades basadas en CONPES 4441. Después regresa para validar la idea que generen."
+"Necesitas una idea más específica antes de validar. Quiliano puede ayudarte a explorar oportunidades basadas en CONPES 4144. Después regresa para validar la idea que generen."
 
 **A Magnus:**
 "Ya tienes problema validado y metodología clara. Magnus puede optimizar cómo van a dividir estas tareas específicas según las fortalezas de cada miembro del equipo."
