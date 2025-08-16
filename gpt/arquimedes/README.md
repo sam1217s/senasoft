@@ -106,9 +106,12 @@ gpt/arquimedes/
 │   ├── product_discovery.md     # Metodologías de producto
 │   ├── manuela_session.md       # Transcripción procesada
 │   └── ai_cards_guide.md        # Guía de AI Cards
-│── assets/                      # Recursos visuales
-    ├── avatar_prompt.md         # Prompt para generar avatar
-    └── avatar_arquimedes.png    # Avatar generado
+├── assets/                      # Recursos visuales
+│   ├── avatar_prompt.md         # Prompt para generar avatar
+│   └── avatar_arquimedes.png    # Avatar generado
+└── examples/                    # Ejemplos y templates
+    ├── conversation_example.md  # Conversaciones de ejemplo
+    └── validation_templates.md  # Templates de validación
 ```
 
 ## 👥 **Equipo - Three Amigos**
@@ -161,7 +164,8 @@ gpt/arquimedes/
 ## 🔗 **Links Importantes**
 
 - **Custom GPT:** [A completar después de crear]
-
+- **Demo Video:** [A completar si se hace]
+- **Feedback Form:** [Para recoger feedback de testing]
 
 ## 📋 **Testing y Feedback**
 
@@ -205,6 +209,4 @@ En el contexto de producto, Arquímedes representa encontrar el **punto de apoyo
 ---
 
 *Creado para SENASoft 2025 - Desarrollo Integral (Synthetic Edition)*  
-
 *Patrocinado por Globant - Ruta Habilitadora "Diseño de Productos Agénticos"*
-
