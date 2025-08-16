@@ -161,8 +161,7 @@ gpt/arquimedes/
 ## 🔗 **Links Importantes**
 
 - **Custom GPT:** [A completar después de crear]
-- **Demo Video:** [A completar si se hace]
-- **Feedback Form:** [Para recoger feedback de testing]
+
 
 ## 📋 **Testing y Feedback**
 
@@ -208,3 +207,4 @@ En el contexto de producto, Arquímedes representa encontrar el **punto de apoyo
 *Creado para SENASoft 2025 - Desarrollo Integral (Synthetic Edition)*  
 
 *Patrocinado por Globant - Ruta Habilitadora "Diseño de Productos Agénticos"*
+
