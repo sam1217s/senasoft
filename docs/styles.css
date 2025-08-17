@@ -229,7 +229,7 @@ footer{padding:32px 24px;color:#99a6c8;border-top:1px solid #20263a;text-align:c
 .tagline.terminal {
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
   color: var(--ink, #eaf6f8);
-  font-size: 16px;
+  font-size: 7px;
   white-space: nowrap;
   overflow: hidden;
 }
