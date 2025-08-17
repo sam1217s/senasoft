@@ -17,20 +17,24 @@
       <path fill="currentColor" d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM0 8h5v16H0V8Zm7.5 0H12v2.2h.07C12.74 8.93 14.37 7.6 16.8 7.6c5.06 0 6 3.33 6 7.66V24h-5v-7.6c0-1.8-.03-4.12-2.51-4.12-2.5 0-2.88 1.95-2.88 3.98V24h-5V8Z"/>
   </symbol>
   </svg>
-  <header class="hero">
-    <div style="overflow-x: auto;">
-      <pre style="font-family: monospace; font-size: 14px; line-height: 1.2;">
+
+<header class="hero">
+  <div style="overflow-x: auto;">
+    <pre class="ascii shimmer">
  _____ ______ _   _             _____  ____  ______ _______ 
  / ____|█ ____|█\ | |   /\      / ____|/█__ \|█ ____|█_   __|
 |█(___ |█|__  |█ \| |  /█ \    |█(___ |█|  | |█|__     |█|   
  \___ \|█ __| |█. ` | /█/\ \    \___ \|█|  | |█ __|    |█|   
  ____) |█|____|█|\  |/█____ \   ____) |█|__| |█|       |█|   
 |█____/|█_____|█| \_/█/    \_\ |█____/ \█___/|█|       |█|   
-      </pre>
-      <p class="tagline"><strong>Desarrollo Integral</strong>: Pregunta, Aprende, sé Excelente.</p>
-    </div>
-  </header>
-
+    </pre>
+<p class="tagline terminal" aria-live="polite">
+  <span class="prefix">Desarrollo Integral: </span>
+  <span id="typer"></span><span class="caret" aria-hidden="true"></span>
+</p>
+  </div>
+</header>
+  
 <section id="docs" class="section">
   <div class="wrap-launch docs-buttons">
     <h2>¿Preguntas sobre los lineamientos?</h2>
@@ -492,4 +496,7 @@
     <p>Itera rápido. Aprende siempre. Comparte todo.</p>
   </footer>
 </body>
+
+<script src="terminal.js"></script>
+
 </html>

@@ -153,21 +153,13 @@ footer{padding:32px 24px;color:#99a6c8;border-top:1px solid #20263a;text-align:c
 .material a { font-weight: 600; color: var(--link); text-decoration: none; }
 .material a:hover { text-decoration: underline; }
 
-
-
-
-
-
-
-
-
 /* === Asistentes de IA (3x2 responsivo) === */
 #asistentes-ia .lead { color: var(--muted); }
 
 .assistants-grid{
   display: grid;
   gap: 16px;
-  grid-template-columns: 1fr;               /* móvil */
+  grid-template-columns: 1fr; /* móvil */
 }
 
 @media (min-width: 700px){
@@ -178,32 +170,81 @@ footer{padding:32px 24px;color:#99a6c8;border-top:1px solid #20263a;text-align:c
   .assistants-grid{ grid-template-columns: 1fr 1fr 1fr; }  /* desktop (3x2) */
 }
 
-.assistant-card{
-  background: linear-gradient(180deg, #141a2b, #0f1423);
-  border: 1px solid #243152;                 /* coherente con Leonardo y tarjetas */
-  border-radius: 14px;
-  padding: 14px;
-  text-align: center;
-  box-shadow: 0 8px 22px rgba(0,0,0,.25);
-}
+.assistant-card{ background: linear-gradient(180deg, #141a2b, #0f1423); border: 1px solid #243152; border-radius: 14px; padding: 14px; text-align: center; box-shadow: 0 8px 22px rgba(0,0,0,.25); }
+.assistant-name{ margin: 10px 0 4px; font-size: 18px; line-height: 1.25; }
+.assistant-desc{ margin: 0; font-size: 13px; color: var(--muted); }
+.assistant-avatar{ width: 100%; aspect-ratio: 1 / 1; object-fit: cover; border-radius: 10px; background: #0c111d; border: 1px solid #243152; }
 
-.assistant-avatar{
-  width: 100%;
-  aspect-ratio: 1 / 1;                       /* imagen cuadrada */
-  object-fit: cover;
-  border-radius: 10px;
-  background: #0c111d;                       /* fallback si no carga */
-  border: 1px solid #243152;                 /* sutil, consistente */
-}
-
-.assistant-name{
-  margin: 10px 0 4px;
-  font-size: 18px;
-  line-height: 1.25;
-}
-
-.assistant-desc{
+/* ASCII shimmer sin JS — compatible Android/iOS */
+.ascii {
+  /* tipografía mono estable en móvil */
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  font-size: 14px;
+  line-height: 1.2;
   margin: 0;
-  font-size: 13px;
-  color: var(--muted);
+
+  /* gradiente que “barre” por el texto */
+  background: linear-gradient(90deg,
+              rgba(255,255,255,0) 0%,
+              rgba(255,255,255,.85) 50%,
+              rgba(255,255,255,0) 100%);
+  background-size: 30% 100%;
+  background-position: -30% 0;
+
+  /* clip de fondo al texto (necesario en iOS Safari) */
+  -webkit-background-clip: text;
+          background-clip: text;
+
+  /* el texto en sí es transparente para revelar el gradiente */
+  color: transparent;                 /* Android/Chrome */
+  -webkit-text-fill-color: transparent; /* iOS Safari */
+
+  /* tinta base cuando no pasa la franja (usa tu --brand si existe) */
+  text-shadow: 0 0 0 var(--brand, #9ee6ef);
+
+  /* suaviza y optimiza la animación en móviles */
+  will-change: background-position;
+}
+
+/* PATCH: hacer el brillo más evidente y estable */
+.ascii {
+  display: inline-block;        /* el fondo mide el contenido, no todo el contenedor */
+  background-repeat: no-repeat;
+  background-size: 24ch 100%;   /* ancho fijo del brillo, en 'columns' */
+  text-shadow: 0 0 0 rgba(158,230,239,.75); /* un poco más sutil que sólido */
+}
+
+/* animación más visible en contenidos anchos */
+.ascii.shimmer { 
+  animation: ascii-shimmer 2.2s linear infinite;
+}
+
+/* mover por distancia fija en 'ch' para que se note aunque el bloque sea enorme */
+@keyframes ascii-shimmer{
+  from { background-position: -28ch 0; }
+  to   { background-position:  110ch 0; }
+}
+
+/* look & feel tipo terminal */
+.tagline.terminal {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+  color: var(--ink, #eaf6f8);
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* cursor parpadeante */
+.caret {
+  display: inline-block;
+  width: 0.6ch;
+  margin-left: 0.1ch;
+  border-right: 2px solid var(--brand, #9ee6ef);
+  animation: blink 1s step-end infinite;
+}
+@keyframes blink { 50% { border-color: transparent; } }
+
+/* Respeta reducir animaciones */
+@media (prefers-reduced-motion: reduce) {
+  .caret { animation: none; }
 }
