@@ -178,7 +178,7 @@ header.hero{padding:20px 24px 32px;border-bottom:1px solid #20263a;background:
 .ascii {
   /* tipografía mono estable en móvil */
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 10px;
+  font-size: 9px;
   line-height: 1.2;
   margin: 0;
 
@@ -251,14 +251,18 @@ header.hero{padding:20px 24px 32px;border-bottom:1px solid #20263a;background:
 footer { padding:10px 10px;color:#99a6c8;border-top:1px solid #20263a;text-align:center}
 
 /* ===== Footer base ===== */
-.site-footer {
-  background: #384a62; 
-  font-size: 0.8rem;
-  text-align: center;
+.site-footer{
+  background:#384a62;
+  font-size:0.8rem;
+  border-top:1px solid #aaaaaa;
+  text-align:center;
 }
 
-.wrap-footer {
-  max-width: 60ch;   /* ancho compacto */
+/* Mantén el disclaimer como lo tienes, solo aseguro el color */
+.wrap-footer{
+  /* ancho maestro del footer para ambas franjas */
+  --footer-max: 60ch;
+  max-width: var(--footer-max);
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -277,16 +281,34 @@ footer { padding:10px 10px;color:#99a6c8;border-top:1px solid #20263a;text-align
 .wrap-footer a:hover { text-decoration: underline; }
 
 /* ===== Franja oscura (slogan) ===== */
-.footer-cta {
-  background: #283546;
+.footer-cta{
+  /* quitar layout anterior (flex/space-between) */
+  display: block;
+  background: rgb(54, 70, 91);
+  color: #fff;
   padding: 5px 0;
+
+  /* mismo ancho que el disclaimer */
+  max-width: var(--footer-max);
+  margin: 0 auto;     /* centra el bloque */
   text-align: center;
-  margin-left: 250px;
-  margin-right: 250px;
 }
 
-.footer-cta .slogan {
-  max-width: 30ch;             /* la mitad de 60ch (del disclaimer) */
-  margin: 0 auto;
+.footer-cta .slogan{
+  /* mitad del ancho del disclaimer en desktop/tablet */
+  max-width: calc(var(--footer-max) / 2);
+  margin: 0 auto;     /* centra el texto dentro de la franja */
   font-weight: 700;
+  letter-spacing: .2px;
+
+  /* elimina restos previos que desalineaban */
+  /* margin: 100px;  <-- eliminado */
+}
+
+/* ===== Responsivo: en pantallas angostas usar ancho completo
+   para que el texto no se apile de forma incómoda ===== */
+@media (max-width: 600px){
+  .footer-cta .slogan{
+    max-width: var(--footer-max);  /* igual al disclaimer */
+  }
 }
