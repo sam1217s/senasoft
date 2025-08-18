@@ -46,7 +46,6 @@ header.hero{padding:20px 24px 32px;border-bottom:1px solid #20263a;background:
 .peer .role{margin:2px 0 6px;color:var(--muted);font-size:13px}
 .icons{display:flex;gap:8px}
 .icon{width:18px;height:18px;display:inline-block;vertical-align:middle}
-footer{padding:32px 24px;color:#99a6c8;border-top:1px solid #20263a;text-align:center}
 
 #lanzamiento { padding: 32px 0; background: transparent; }
 #lanzamiento h2{ font-size:clamp(20px,3vw,28px);margin:0 0 8px }
@@ -179,7 +178,7 @@ footer{padding:32px 24px;color:#99a6c8;border-top:1px solid #20263a;text-align:c
 .ascii {
   /* tipografía mono estable en móvil */
   font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
-  font-size: 14px;
+  font-size: 10px;
   line-height: 1.2;
   margin: 0;
 
@@ -247,4 +246,47 @@ footer{padding:32px 24px;color:#99a6c8;border-top:1px solid #20263a;text-align:c
 /* Respeta reducir animaciones */
 @media (prefers-reduced-motion: reduce) {
   .caret { animation: none; }
+}
+
+footer { padding:10px 10px;color:#99a6c8;border-top:1px solid #20263a;text-align:center}
+
+/* ===== Footer base ===== */
+.site-footer {
+  background: #384a62; 
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.wrap-footer {
+  max-width: 60ch;   /* ancho compacto */
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.wrap-footer .disclaimer {
+  color: gainsboro;  /* color solicitado */
+}
+
+.wrap-footer a {
+  color: var(--link, #0aa0c6);
+  text-decoration: none;
+  font-weight: 600;
+}
+.wrap-footer a:hover { text-decoration: underline; }
+
+/* ===== Franja oscura (slogan) ===== */
+.footer-cta {
+  background: #283546;
+  padding: 5px 0;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+.footer-cta .slogan {
+  max-width: 30ch;             /* la mitad de 60ch (del disclaimer) */
+  margin: 0 auto;
+  font-weight: 700;
 }
