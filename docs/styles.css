@@ -9,7 +9,7 @@ a:hover{text-decoration:underline}
 header.hero{padding:20px 24px 32px;border-bottom:1px solid #20263a;background:
     radial-gradient(800px 400px at 80% 0%, rgba(77,208,225,.08), transparent 60%)}
 .tagline{margin:0;color:var(--muted);font-size:clamp(14px,2vw,18px)}
-.section{padding:20px 0;padding-right: 25px;}
+.section{padding:20px 0;}
 .section h2{font-size:clamp(20px,3vw,28px);margin:0 0 8px}
 .section p.lead{color:var(--muted);margin:0 0 16px}
 /* Grid */
@@ -53,7 +53,7 @@ header.hero{padding:20px 24px 32px;border-bottom:1px solid #20263a;background:
 .card.lanzamiento {border: none;}
 
 /* Contenedor centrado y con ancho máximo */
-#lanzamiento .wrap-launch { max-width: 1100px; margin: 0 auto; padding: 0 16px; margin-right: 25px;}
+#lanzamiento .wrap-launch { max-width: 1100px; margin: 0 auto; padding: 0 16px;}
 
 /* Grilla: 1 columna en móvil, 2 en escritorio */
 #lanzamiento .grid {
@@ -97,7 +97,7 @@ header.hero{padding:20px 24px 32px;border-bottom:1px solid #20263a;background:
 #leonardo .wrap-launch { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
 
 /* Grid responsivo como las otras secciones */
-.leo-grid { display:grid; gap:16px; grid-template-columns: 1fr; padding-right: 25px; }
+.leo-grid { display:grid; gap:16px; grid-template-columns: 1fr; }
 @media (min-width: 820px) { .leo-grid { grid-template-columns: 1fr 1fr; } }
 
 /* Tarjetas */
