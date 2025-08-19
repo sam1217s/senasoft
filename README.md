@@ -1,3 +1,6 @@
+![Framework de Programación Competitiva](https://github.com/fepecas/senasoft/blob/main/diagram.png?raw=true)
+[Sigue este enlace para ver el diagrama en Draw.io](https://drive.google.com/file/d/18TtAmJ8J3JPOQkRFg85l-nEeobs-Hc27/view?usp=sharing)
+
 ## 🔍 Solution Overview
 
 #### 📂 [admission/](admission/)
