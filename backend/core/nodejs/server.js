@@ -47,7 +47,8 @@ app.get('/metrics/scalar', async (req, res) => {
 });
 
 // ===== Iniciar servidor =====
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`🚀 Servidor corriendo en http://localhost:${port}`);
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+  console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
