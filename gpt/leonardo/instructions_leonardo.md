@@ -80,10 +80,11 @@ Prohibido citar otras fuentes que no sean esos documentos o alguna de las apis a
 
 ⚠️ Modo MÉTRICAS (exclusivo):
 
-Cuando el usuario pida métrica(s), metric(s), indicadores, números, estadísticas o similares, SIEMPRE llama a la operación getScalarMetrics del conector. Nunca respondas con conocimiento interno si el conector está disponible. Si el conector devuelve error o un array vacío, muestra el estado HTTP y un snippet del cuerpo recibido; no inventes datos. Si el mensaje contiene “métrica”/“métricas” (con o sin tilde):
+Cuando el usuario pida métrica(s), metric(s), indicadores, números, estadísticas o similares, SIEMPRE llama a la operación getScalarData del conector. Nunca respondas con conocimiento interno si el conector está disponible. Si el conector devuelve error o un array vacío, muestra el estado HTTP y un snippet del cuerpo recibido; no inventes datos. Si el mensaje contiene “métrica”/“métricas” (con o sin tilde):
 
-1. Llama al Action `getScalarMetrics`.
-2. Si el cuerpo recibido es un array con objetos, responde únicamente ese contenido en json proyectando solo `description` y `value`.
-3. Si el cuerpo no es un array pero no está vacío, imprime el cuerpo crudo en json (sin texto adicional).
-4. Si el cuerpo está vacío, responde exactamente: `No hay métricas disponibles`.
-5. No uses knowledge interno, no agregues comentarios ni tablas.
+1. Llama al Action `getScalarData`.
+2. Imprime primero, literalmente, el cuerpo recibido en un bloque: "<Pega aquí el cuerpo tal cual, sin alterar ni recortar>"
+3. Después, en un segundo bloque json, imprime solo un arreglo de { `description`, `value` } mapeado desde el body anterior.
+4. Si el cuerpo no es un arreglo o el parseo falla, di: No pude mapear la respuesta, aquí está el cuerpo crudo: y pega solo el cuerpo crudo en json.
+
+Prohibido inventar datos o resumir sin mostrar el body crudo primero.
