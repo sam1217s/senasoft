@@ -114,6 +114,8 @@ $$\text{[https://senasoft-leonardo-metrics.onrender.com](https://senasoft-leonar
 Para verificar el *payload* con las 6 métricas, consulta:
 $$\text{[https://senasoft-leonardo-metrics.onrender.com/metrics/scalar](https://senasoft-leonardo-metrics.onrender.com/metrics/scalar)}$$
 
+<img width="1013" height="727" alt="image" src="https://github.com/user-attachments/assets/32ebad91-17d0-46be-8dc5-6bb0427c2104" />
+
 
 -----
 
