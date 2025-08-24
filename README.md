@@ -24,6 +24,41 @@ La división del trabajo fue estratégica, cubriendo las tres áreas clave del r
 | **Samuel Gomez Gomez** | Líder de Producto & Validación de Métricas | Aseguró que las 6 preguntas estratégicas fueran cubiertas. Preparó este **`README.md`** y ayudó en la configuración inicial del servidor y el *testing* final. | `README.md`, Testing de métricas y `server.js` |
 
 -----
+## 📁 Estructura del Repositorio
+
+El proyecto está organizado en tres directorios principales, reflejando las capas de **Integración AI (`gpt`)**, **Datos (`database`)** y **Lógica del Servidor (`backend`)**.
+
+```tree
+.
+├── gpt/leonardo/
+│   ├── openai.action.schema.json
+│   ├── instructions_leonardo_updated.md  # Instrucciones actualizadas para la IA.
+│   └── (avatares y knowledge existentes)
+│
+├── database/collection/
+│   ├── metrics_scalar.csv             # Archivo de métricas escalares (Existente)
+│   ├── metrics_scalar.js              # Script de siembra de métricas (Existente)
+│   ├── aprendices_sample.js           # Datos de muestra: Colección Aprendices (Solución Reto)
+│   ├── centros_sample.js              # Datos de muestra: Colección Centros de Formación
+│   ├── programas_sample.js            # Datos de muestra: Colección Programas
+│   └── instructores_sample.js         # Datos de muestra: Colección Instructores
+│
+└── backend/core/nodejs/
+    ├── package.json
+    ├── server.js                 # Servidor principal (Express)
+    ├── models/                   # Definición de Schemas (Mongoose/MongoDB)
+    │   ├── Aprendiz.js
+    │   ├── Centro.js
+    │   ├── Instructor.js
+    │   └── Programa.js
+    ├── routes/                   # Endpoints de la API
+    │   ├── leonardo.js           # 🔑 Endpoints para Leonardo (/metrics/scalar)
+    │   ├── aprendices.js
+    │   ├── centros.js
+    │   ├── instructores.js
+    │   └── metricas.js
+    └── scripts/
+        └── seedData.js           # Script de siembra de datos de ejemplo
 
 ## 📦 1. Detalle de los Entregables Técnicos
 
